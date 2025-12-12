@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.nav-main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  z-index: 50;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.nav-main-container {
+  padding: 0 1rem;
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.nav-main-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-main-menu-btn {
+  display: block;
+  padding: 0.5rem;
+  color: #334155;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.nav-main-menu-btn:hover {
+  color: #f97316;
+}
+
+.nav-main-logo-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-main-logo-img {
+  height: 44px;
+  transition: transform .3s;
+}
+
+.nav-main-logo-container:hover .nav-main-logo-img {
+  transform: scale(1.05);
+}
+
+.nav-main-search-mobile {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: 180px;
+  gap: 0.5rem;
+  background: white;
+  border: 1px solid #fb923c;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+}
+
+.nav-main-search-mobile input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #475569;
+}
+
+.nav-main-cart-mobile {
+  display: flex;
+  align-items: center;
+}
+
+.nav-main-cart-btn {
+  position: relative;
+  padding: 0.5rem;
+  color: #334155;
+  transition: 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav-main-cart-btn:hover {
+  color: #f97316;
+}
+
+.nav-main-cart-count {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: #dc2626;
+  color: white;
+  font-size: 10px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-main-desktop {
+  display: none;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-main-link {
+  font-weight: 500;
+  color: #334155;
+  transition: 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav-main-link:hover {
+  color: #f97316;
+}
+
+.nav-main-admin-btn {
+  padding: 0.5rem 1rem;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: 0.2s;
+  color: #334155;
+}
+
+.nav-main-admin-btn:hover {
+  background: #e2e8f0;
+}
+
+.nav-main-search-desktop {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  gap: 0.5rem;
+  border: 1px solid #fb923c;
+  padding: 0.6rem 1rem;
+  border-radius: 9999px;
+}
+
+.nav-main-search-desktop input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.nav-main-cart-desktop {
+  position: relative;
+  color: #334155;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav-main-cart-desktop:hover {
+  color: #f97316;
+}
+
+.nav-main-cart-count-desktop {
+  position: absolute;
+  top: -4px;
+  left: 12px;
+  font-size: 8px;
+  width: 14px;
+  height: 14px;
+  background: #dc2626;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-main-mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 999;
+}
+
+.nav-main-mobile-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.nav-main-mobile-logo {
+  height: 32px;
+}
+
+.nav-main-close-mobile {
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  color: #334155;
+  cursor: pointer;
+}
+
+.nav-main-mobile-links {
+  padding: 1rem;
+}
+
+.nav-main-mobile-link {
+  display: block;
+  padding: 1rem 0;
+  font-size: 1.25rem;
+  color: #334155;
+  border-bottom: 1px solid #f1f5f9;
+  transition: 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav-main-mobile-link:hover {
+  color: #f97316;
+}
+
+@media (min-width: 1024px) {
+  .nav-main-menu-btn,
+  .nav-main-search-mobile,
+  .nav-main-cart-mobile {
+    display: none;
+  }
+  .nav-main-desktop {
+    display: flex;
+  }
+  .nav-main-search-desktop {
+    width: 260px;
+  }
+}
+
+.home, .pd-container, .lp-container {
+  padding-top: 76px; 
+}
