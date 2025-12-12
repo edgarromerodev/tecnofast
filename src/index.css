@@ -259,3 +259,353 @@ html {
 .home, .pd-container, .lp-container {
   padding-top: 76px; 
 }
+
+/* HERO - ESTILOS*/
+.hero2-wrapper {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  padding-top: 1rem;
+}
+
+.hero2-container {
+  display: flex;
+  gap: 2rem;
+  max-width: 1280px;
+  margin: 2.5rem auto;
+}
+
+@media (max-width: 1280px) {
+  .hero2-container {
+    flex-direction: column;
+  }
+}
+
+/* -------- HERO IZQUIERDO VERDE -------- */
+.hero2-left {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #065f46;
+  color: white;
+  border-radius: 24px;
+  border: 1px solid #064e3b;
+  overflow: hidden;
+  min-height: 380px;
+}
+
+.hero2-topline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: #059669;
+}
+
+.hero2-left-content {
+  padding: 1.5rem;
+  position: relative;
+  z-index: 10;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: 640px) {
+  .hero2-left-content {
+    padding: 3rem 4rem;
+  }
+}
+
+/* BADGE */
+.hero2-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: #047857;
+  padding: 0.4rem 1rem;
+  font-size: 0.75rem;
+  border-radius: 9999px;
+  border: 1px solid #065f46;
+  max-width: fit-content;
+  margin-bottom: 1.5rem;
+}
+
+.hero2-badge-new {
+  background: white;
+  color: #065f46;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.hero2-badge-arrow {
+  transition: all .2s ease;
+}
+
+.hero2-badge:hover .hero2-badge-arrow {
+  margin-left: 0.5rem;
+}
+
+/* TITLE */
+.hero2-title {
+  font-size: 1.75rem;
+  line-height: 1.2;
+  margin: 0.75rem 0;
+  font-weight: 600;
+  max-width: 360px;
+}
+
+@media (min-width: 640px) {
+  .hero2-title {
+    font-size: 3rem;
+    max-width: 480px;
+  }
+}
+
+/* PRICE */
+.hero2-price-box {
+  margin-top: 1.5rem;
+  font-weight: 500;
+}
+
+.hero2-price-label {
+  opacity: 0.8;
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+
+.hero2-price-value {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* BUTTON */
+.hero2-btn {
+  margin-top: 1.5rem;
+  background: #000000;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all .2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  max-width: fit-content;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.hero2-btn:hover {
+  background: #059669;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.hero2-btn:active {
+  transform: translateY(0);
+}
+
+@media (min-width: 640px) {
+  .hero2-btn {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+  }
+}
+
+/* IMAGE MAIN */
+.hero2-main-img {
+  width: 100%;
+  height: auto;
+  max-height: 280px;
+  object-fit: contain;
+}
+
+@media (min-width: 640px) {
+  .hero2-main-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 350px;
+    max-height: 320px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero2-main-img {
+    right: 2.5rem;
+  }
+}
+
+/* -------- COLUMN RIGHT -------- */
+.hero2-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .hero2-right {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero2-right {
+    flex-direction: column;
+    max-width: 380px;
+    min-width: 380px;
+  }
+}
+
+/* CARDS */
+.hero2-card {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  border-radius: 24px;
+  border: 1px solid rgba(0,0,0,0.3);
+  transition: all .3s ease;
+  cursor: pointer;
+  min-height: 180px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ORANGE */
+.hero2-card-orange {
+  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+  border-color: #9a3412;
+}
+
+.hero2-card-orange:hover {
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+}
+
+/* YELLOW */
+.hero2-card-yellow {
+  background: linear-gradient(135deg, #facc15 0%, #eab308 100%);
+  border-color: #b45309;
+}
+
+.hero2-card-yellow:hover {
+  background: linear-gradient(135deg, #ca8a04 0%, #a16207 100%);
+}
+
+/* CARD ELEMENTS */
+.hero2-card-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.hero2-card-link {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #000000;
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: color .2s ease;
+}
+
+.hero2-card:hover .hero2-card-link {
+  color: #ffffff;
+}
+
+.hero2-card-arrow {
+  transition: all .2s ease;
+}
+
+.hero2-card:hover .hero2-card-arrow {
+  margin-left: 0.5rem;
+}
+
+.hero2-card-img {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  transition: transform .3s ease;
+}
+
+.hero2-card:hover .hero2-card-img {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* RESPONSIVE ADJUSTMENTS */
+@media (max-width: 768px) {
+  .hero2-wrapper {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .hero2-container {
+    margin: 1.5rem auto;
+    gap: 1.5rem;
+  }
+  
+  .hero2-left {
+    min-height: 320px;
+  }
+  
+  .hero2-title {
+    font-size: 1.5rem;
+    max-width: 100%;
+  }
+  
+  .hero2-card {
+    padding: 1.25rem;
+    min-height: 160px;
+  }
+  
+  .hero2-card-title {
+    font-size: 1.5rem;
+  }
+  
+  .hero2-card-img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero2-left-content {
+    padding: 1.25rem;
+  }
+  
+  .hero2-title {
+    font-size: 1.25rem;
+  }
+  
+  .hero2-price-value {
+    font-size: 1.75rem;
+  }
+  
+  .hero2-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .hero2-card-img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+
+
