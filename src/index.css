@@ -607,5 +607,71 @@ html {
   }
 }
 
+/*LOGOS DE MARCAS*/
+
+/* WRAPPER */
+.trusted-wrapper {
+  margin-top: 7rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+/* TITLE */
+.trusted-title {
+  font-size: 1rem;
+  color: #94a3b8;
+  font-weight: 500;
+  margin-bottom: 3.5rem;
+}
+
+/* MARQUEE CONTAINER */
+.trusted-marquee {
+  max-width: 960px; 
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+
+/* TRACK (cinta que se mueve) */
+.trusted-track {
+  display: inline-flex;
+  align-items: center;
+  animation: marquee 20s linear infinite;
+}
+
+
+/* LOGOS */
+.trusted-logo {
+  margin: 0 2.75rem;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  opacity: 0.9;
+  transition: opacity 0.3s;
+}
+
+.trusted-logo:hover {
+  opacity: 1;
+}
+
+/* ANIMATION */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 640px) {
+  .trusted-logo {
+    width: 70px;
+    height: 70px;
+    margin: 0 1.8rem;
+  }
+}
 
 
