@@ -1,5 +1,6 @@
+import Title from "../../components/ui/Title";
 import { ourSpecsData } from "../../data/ourSpecsData";
-import Title from "../../Components/ui/Title";
+
 
 const OurSpecs = () => {
   return (
