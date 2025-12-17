@@ -5,6 +5,29 @@ html {
   font-family: 'Montserrat', sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+.app-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-main {
+  flex: 1;
+}
+
 
 .nav-main {
   position: fixed;
@@ -259,6 +282,8 @@ html {
 .home, .pd-container, .lp-container {
   padding-top: 76px; 
 }
+
+
 
 /* HERO - ESTILOS*/
 .hero2-wrapper {
@@ -936,6 +961,117 @@ html {
 }
 
 
+/* ===== FOOTER GENERAL ===== */
+.footer {
+  background: #020617; 
+  padding: 0 24px;
+  color: #cbd5f5; 
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===== TOP SECTION ===== */
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 0;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+
+/* ===== BRAND SECTION ===== */
+.footer-brand {
+  max-width: 410px;
+}
+
+.footer-logo {
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.footer-logo-link:hover .footer-logo {
+  transform: scale(1.05);
+}
+
+
+.footer-description {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #cbd5e1; /* slate-300 */
+}
+
+/* ===== LINKS GRID ===== */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+
+
+@media (min-width: 768px) {
+  .footer-top {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-links {
+    width: 45%;
+  }
+}
+
+/* ===== EACH SECTION ===== */
+.footer-title {
+  font-weight: 600;
+  color: #f1f5f9; 
+  margin-bottom: 15px;
+}
+
+/* ===== LIST ===== */
+.footer-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-list-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+/* ===== ICONS ===== */
+.footer-icon {
+  width: 16px;
+  height: 16px;
+  color: #94a3b8; 
+}
+
+
+/* ===== LINKS ===== */
+.footer-link {
+  text-decoration: none;
+  color: #cbd5e1; 
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #38bdf8; 
+}
+
+/* ===== COPY ===== */
+.footer-copy {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.85rem;
+  color: #94a3b8; 
+}
 
 
 

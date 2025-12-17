@@ -8,7 +8,7 @@ const OurSpecs = () => {
           <Title
         visibleButton={false}
         title="¿Por qué elegirnos?"
-        description="En TecnoMarket GT te ofrecemos productos originales, envíos rápidos y un soporte confiable para garantizarte una experiencia de compra segura y moderna."
+        description="En TecnoFast GT te ofrecemos productos originales, envíos rápidos y un soporte confiable para garantizarte una experiencia de compra segura y moderna."
       />
     
     <div className="ourSpecs__grid">
