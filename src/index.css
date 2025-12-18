@@ -1073,5 +1073,285 @@ html, body, #root {
   color: #94a3b8; 
 }
 
+/* ======== CONTENEDOR GENERAL PRODUCT DETAILS ======== */
+.product-details-container {
+  max-width: 1200px;
+  margin: 0 auto 4rem auto;
+  padding: 90px 16px 0; 
+}
+
+/* Padding para tablet */
+@media (min-width: 640px) {
+  .product-details-container {
+    padding: 90px 20px 0;
+  }
+}
+
+
+/* Padding para desktop */
+@media (min-width: 1024px) {
+  .product-details-container {
+    padding: 90px 0 0;
+  }
+}
+
+/* Wrapper principal */
+.product-details-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+
+@media (min-width: 1024px) {
+  .product-details-wrapper {
+    flex-direction: row;
+    gap: 48px;
+  }
+}
+
+
+/* ======== GALERÍA ======== */
+.product-details-gallery {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .product-details-gallery {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-details-gallery {
+    width: 50%;
+  }
+}
+
+
+/* Miniaturas */
+.product-details-thumbs {
+  display: flex;
+  gap: 8px;
+  order: 2;
+  overflow-x: auto;
+}
+
+@media (min-width: 640px) {
+  .product-details-thumbs {
+    flex-direction: column;
+    order: 1;
+    overflow-x: visible;
+  }
+}
+
+.product-details-thumb-box {
+  width: 80px;
+  height: 80px;
+  background: #f1f5f9;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+
+.product-details-thumb-box:hover img {
+  transform: scale(1.05);
+}
+
+.product-details-thumb-img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s;
+}
+
+/* Imagen principal */
+.product-details-main-image-box {
+  background: #f1f5f9;
+  border-radius: 12px;
+  width: 100%;
+  height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (min-width: 640px) {
+  .product-details-main-image-box {
+    height: 320px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-details-main-image-box {
+    height: 380px;
+  }
+}
+
+.product-details-main-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  padding: 16px;
+}
+
+/* ======== INFORMACIÓN ======== */
+.product-details-info {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .product-details-info {
+    width: 50%;
+  }
+}
+
+
+/* Título */
+.product-details-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+/* Descripción */
+.product-details-description {
+  font-size: 16px;
+  color: #475569;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+/* Rating */
+.product-details-rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.product-details-stars {
+  display: flex;
+}
+
+.product-details-star {
+  color: transparent;
+}
+
+.product-details-reviews {
+  margin-left: 8px;
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* Precios */
+.product-details-price-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.product-details-price {
+  font-size: 32px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.product-details-original-price {
+  font-size: 20px;
+  color: #94a3b8;
+  text-decoration: line-through;
+}
+
+/* Ahorro */
+.product-details-save {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #64748b;
+  margin-bottom: 24px;
+}
+
+/* Acciones */
+.product-details-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+
+
+@media (min-width: 640px) {
+  .product-details-actions {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.product-details-btn {
+  background: #1e293b;
+  color: white;
+  padding: 14px 36px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .product-details-btn {
+    width: auto;
+  }
+}
+
+.product-details-btn:hover {
+  background: #0f172a;
+}
+
+.product-details-btn:active {
+  transform: scale(0.95);
+}
+
+/* Divider */
+.product-details-divider {
+  margin: 24px 0;
+  border-color: #cbd5e1;
+}
+
+/* Características */
+.product-details-features {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: #64748b;
+}
+
+.product-details-feature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.product-details-feature-icon {
+  color: #94a3b8;
+}
+
+/* Not found */
+.product-details-not-found {
+  text-align: center;
+  margin-top: 40px;
+  color: #64748b;
+}
+
+
 
 
